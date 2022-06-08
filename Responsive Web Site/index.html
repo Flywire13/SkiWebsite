@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ski Website</title>
+    <link rel="Stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<section class="homepage">
+        <header class="header">
+
+            <h1>
+                <div class="title">Ski America</div>
+            </h1>
+
+            <nav class="buttons">
+                <button onclick="homeButton()">Home</button>
+                <button onclick="galleryButton()">Gallery</button>
+                <button onclick="recommendedButton()">Ski Recommendations</button>
+            </nav>
+
+        </header>
+
+        <aside class="par1">
+            <h2>Top Ranked Ski Resorts</h2>
+            <ul id="resortList">
+                <li>Breckenridge</li>
+                <li>Vail</li>
+                <li>Aspen Snowmass</li>
+                <li>Alta</li>
+                <li>Jackson Hole</li>
+                <li>Telluride</li>
+                <li>Squaw Valley</li>
+                <li>Beaver Creek</li>
+                <li>Steamboat</li>
+                <li>Snowbird</li>
+            </ul>
+        </aside>
+
+        <aside class="body1">
+            <h2>Mission Statement</h2>
+            <p id="bodyparagraph">
+            This website is here to help people get more into the wonderful hobby of skiing. We have an ever expanding gallery of skiing videos,
+            with a tutorial section soon to come! Not sure which ski is right for you? Use our Ski Reccomendations tool to get our expert* opinion.
+            For any questions or reccomendations, please reach out to us via the contacts in the contacts section.<br>*Not actual experts
+            </p>
+            
+        </aside>
+
+        <figure class="pic1">
+            <img src="SkiPic1.jpeg">
+
+            <figcaption>Aspen Snowmass</figcaption>
+
+        </figure>
+
+        <aside class="par2">
+            <h2>Reccomended skiers to watch</h2>
+            <ul id="skierList">
+                <li class="skier">Tom Wallisch</li>
+                <li class="skier">TJ Schiller</li>
+                <li class="skier">Torrin Yater-Wallace</li>
+                <li class="skier">Henrik Harlaut</li>
+                <li class="skier">Max Moffat</li>
+                <li class="skier">Jake Mageau</li>
+
+            </ul>
+        </aside>
+
+        <figure class="pic2">
+            <img src="SkiPic2.jpeg">
+
+            <figcaption>Henrik Harlaut</figcaption>
+            
+        </figure>
+
+        <footer class="footer">
+            <div>
+                <p>Contact Info</p>
+                <p>Email: 10798817@uvu.edu</p>
+                <p>Phone: 801-111-1111</p>
+            </div>
+            <div>
+            </div>
+            <div>
+                <p>Top Ski Brands:</p>
+                <p><a href="https://www.armadaskis.com/">Armada</a><p>
+                <p><a href="https://www.rossignol.com/">Rossignol</a></p>
+                <p><a href="https://www.lineskis.com">Line</a></p>
+            </div>
+        </footer>
+        
+    </section>
+
+
+<section class="gallerypage">
+
+        <header class="header">
+
+            <h1>
+                <div class="title">Ski America</div>
+            </h1>
+
+            <nav class="buttons">
+                <button onclick="homeButton()">Home</button>
+                <button onclick="galleryButton()">Gallery</button>
+                <button onclick="recommendedButton()">Ski Reccomendations</button>
+            </nav>
+
+        </header>
+
+        <figure class="vid1">
+            <iframe src="https://www.youtube.com/embed/E93cmhfJgCM" width="100%" height="100%"></iframe>
+            <figcaption>Tom Wallisch 20/21 Season Edit</figcaption>
+        </figure>
+
+        <figure class="vid2">
+            <iframe src="https://www.youtube.com/embed/tHv04sJB7-A"  width="100%" height="100%"></iframe>
+            <figcaption>
+                Jake Mageau: Real Ski 2019 Fan Favorite | World of X Games
+            </figcaption>
+        </figure>
+
+        <figure class="vid3">
+            <iframe src="https://www.youtube.com/embed/15nNNmo7GdA"  width="100%" height="100%"></iframe>
+            <figcaption>
+                Henrik Harlaut: Real Ski 2019 | World of X Games
+            </figcaption>
+        </figure>
+
+        <figure class="vid4">
+            <iframe src="https://www.youtube.com/embed/tjY2DVfLTaQ"  width="100%" height="100%"></iframe>
+            <figcaption>Max Moffat: Silver Medalist - Jeep Men's Ski Slopestyle | X Games Aspen 2022
+            </figcaption>
+        </figure>
+        <footer class="footer">
+            <div>
+                <p>Contact Info</p>
+                <p>Email: 10798817@uvu.edu</p>
+                <p>Phone: 801-111-1111</p>
+            </div>
+            <div>
+                <p>Top Ski Brands:</p>
+                <p><a href="https://www.armadaskis.com/">Armada</a><p>
+                <p><a href="https://www.rossignol.com/">Rossignol</a></p>
+                <p><a href="https://www.lineskis.com">Line</a></p>
+            </div>
+        </footer>
+    
+
+</section>
+
+
+<section class="recommendations">
+        <header class="header">
+
+            <h1>
+                <div class="title">Ski America</div>
+            </h1>
+
+            <nav class="buttons">
+                <button onclick="homeButton()">Home</button>
+                <button onclick="galleryButton()">Gallery</button>
+                <button onclick="recommendedButton()">Ski Recommendations</button>
+            </nav>
+
+        </header>
+        <h1 class="recHeader">Form for ski recommendations:</h1>
+        <span id="empty1"></span>
+        <span id="empty2"></span>
+        <span id="empty3"></span>
+        <form id="skiform">
+            <h1>Ski Reccomendations</h1>
+
+            <label for="height"><b>Height</b></label>
+            <select id="height" required>
+                <option value="1">132cm-141cm</option>
+                <option value="2">142cm-151cm</option>
+                <option value="3">152cm-162cm</option>
+                <option value="4">163cm-172cm</option>
+                <option value="5">152cm-162cm</option>
+                <option value="6">163cm-172cm</option>
+                <option value="7">173cm-182cm</option>
+                <option value="8">183cm-192cm</option>
+                <option value="9">193cm+</option>
+            </select>
+
+            <label for="skill"><b>Skill Level</b></label>
+            <select id="skill" required>
+                <option value="1">Beginner</option>
+                <option value="2">Intermediate</option>
+                <option value="3">Advanced</option>
+                <option value="4">Expert</option>
+            </select>
+
+            
+            <label for="skistyle"><b>Style</b></label>
+            <select id="skistyle" required>
+                <option value="1">Groomers</option>
+                <option value="2">Park</option>
+                <option value="3">Moguls</option>
+                <option value="4">Off-Piste</option>
+                
+            </select>
+
+            <button onclick="submitbutton()"type="button" class="submitButton">Submit</button>
+            <button onclick="cancelbutton()" type="button" class="cancel">Cancel</button>
+
+        </form>
+
+
+        <form id="results">
+        </form>
+
+        <footer class="footer">
+            <div>
+                <p>Contact Info</p>
+                <p>Email: 10798817@uvu.edu</p>
+                <p>Phone: 801-111-1111</p>
+            </div>
+            <div>
+            </div>
+            <div>
+                <p>Top Ski Brands:</p>
+                <p><a href="https://www.armadaskis.com/">Armada</a><p>
+                <p><a href="https://www.rossignol.com/">Rossignol</a></p>
+                <p><a href="https://www.lineskis.com">Line</a></p>
+            </div>
+        </footer>
+</section>
+
+</html>
