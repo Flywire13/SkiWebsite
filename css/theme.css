@@ -11,6 +11,11 @@ Added a text border -webkit-text-stroke to make title and headers stand out more
 Made header background into smaller repeating image
 */
 
+@viewport{
+    width: device-width;
+    zoom: 1;
+}
+
 html {
     background-image: url(../Backgrounds/ToggleBackground.jpeg);
     background-size: 200px;

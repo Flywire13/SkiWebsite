@@ -10,6 +10,11 @@ Added a text border -webkit-text-stroke to make title stand out more
 Made title bigger and adjusted positions
 */
 
+@viewport{
+    width: device-width;
+    zoom: 1;
+}
+
 html {
     background-image: url(../Backgrounds/Background2.jpeg);
     font-family: sans-serif;
