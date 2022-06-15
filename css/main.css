@@ -1,0 +1,508 @@
+/*
+Fixed video alignment on gallery page (margins weren't the same on each side)
+Changed font size on photo/video captions
+Added a fax number to the footer to even out left and right info sections
+Added margin to the bottom before footer
+Added borders on images and videos
+Added both main.css and theme.css to css folder
+Added all background images and pictures to Backgrounds folder
+Added a text border -webkit-text-stroke to make title stand out more
+Made title bigger and adjusted positions
+*/
+
+html {
+    background-image: url(../Backgrounds/Background2.jpeg);
+    font-family: sans-serif;
+}
+
+
+@media screen and (min-width: 768px){
+
+    .homepage {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        margin: 0 auto;
+        background-image: url(../Backgrounds/Background.jpeg);
+        max-width: 1200px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        grid-template-areas: 
+        "header header header header"
+        "par1 par1 pic1 pic1"
+        "body1 body1 body1 body1"
+        "par2 par2 pic2 pic2"
+        "footer footer footer footer"
+    }
+
+    .gallerypage {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        margin: 0 auto;
+        background-image: url(../Backgrounds/Background.jpeg);
+        max-width: 1200px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        grid-template-areas: 
+        "header header"
+        "vid1 vid2"
+        "vid1 vid2"
+        "vid3 vid4"
+        "vid3 vid4"
+        "footer footer"
+    }
+
+    .recommendations{
+        display: none;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        margin: 0 auto;
+        background-image: url(../Backgrounds/Background.jpeg);
+        max-width: 1200px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        grid-template-areas: 
+        "header header header"
+        "recheader recheader recheader"
+        "empty form empty2"
+        "empty3 empty3 empty3"
+        "empty3 empty3 empty3"
+        "footer footer footer"
+
+    }
+
+    img {
+        border: 5px white solid;
+    }
+
+    iframe {
+        border: 5px white solid;
+    }
+    .recHeader {
+        margin-left: 5%;
+        grid-area: recheader;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #empty {
+        grid-area: empty;
+    }
+
+    #empty2 {
+        grid-area: empty2;
+    }
+
+    #empty3 {
+        grid-area: empty3;
+    }
+
+    .header{
+        grid-area: header;
+        background-image: url(../Backgrounds/headerbackground.jpeg);
+        height: 160px;
+    }
+
+    h1{
+        font-size: 24pt;
+        margin-left: 20px;
+    }
+
+    .title { 
+        margin-top: 110px;
+        font-size: 32pt;
+        -webkit-text-stroke: 1px white;
+    }
+
+    .buttons {
+        display:flex;
+        flex-basis: 1fr;
+        justify-content: flex-end;
+        margin-right: 30px;
+        margin-top: -50px;
+
+
+    }
+
+    #bodyparagraph{
+        margin-left: 2.5%;
+    }
+
+    .body1 {
+        grid-area: body1;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+        margin-top: 20px;
+        font-size: 16pt;
+        line-height: 30pt;
+    }
+
+    .pic1 {
+        grid-area: pic1;
+        margin-right: 15%;
+        margin-top: 100px;
+       
+    }
+
+    .pic2 {
+        grid-area: pic2;
+        margin-right: 15%;
+        margin-top: 60px;
+    }
+
+    .par1 {
+        grid-area: par1;
+        margin-left: 15%;
+        margin-top: 75px;
+    }
+
+
+    .par2{
+        grid-area: par2;
+        margin-left: 15%;
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+
+    .footer{
+        grid-area: footer;
+        background-image: url(../Backgrounds/FooterBackground.jpeg);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+
+    #resortList { 
+        display:grid;
+        font-size: 16pt;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(50px, auto);
+        grid-column-gap: 50px;
+        margin-top: 50px;
+        
+    }
+
+    #skierList {
+        font-size: 16pt;
+        
+    }
+
+    .skier {
+        padding: 10px;
+    }
+
+    #skiform {
+        grid-area: form;
+        display: none;
+        background-color: white;
+        border: 2px black solid;
+        width: 600px;
+    
+    }
+
+    #results {
+        display: none;
+        grid-area: form;
+        background-color: white;
+        border: 2px black solid;
+        width: 600px;
+        align-content: center;
+    }
+
+    #resultsbutton {
+        float: right;
+    }
+
+    #resultTitle {
+        font-size: 20px;
+        margin: 0 auto
+    }
+
+    #resultSki {
+        font-size: 24px;
+        margin: 0 auto;
+    }
+
+    .vid1 {
+        grid-area: vid1;
+        margin-top: 75px;
+        margin-left: 100px;
+        width: 450px;
+        height: 300px;
+    }
+
+    .vid2{
+        margin-top: 75px;
+        grid-area: vid2;
+        width: 450px;
+        height: 300px;
+    }
+
+    .vid3{
+        grid-area: vid3;
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-bottom: 100px;
+        width: 450px;
+        height: 300px;
+    }
+
+    .vid4{
+        grid-area: vid4;
+        margin-top: 100px;
+        width: 450px;
+        height: 300px;
+    }
+
+    .caption {
+        font-size: 10pt;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    
+    .homepage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(120px, auto);
+        margin: 0 auto;
+        background-image: url(../Backgrounds/Background.jpeg);
+        max-width: 1200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        grid-template-areas: 
+        "header"
+        "par1"
+        "pic1"
+        "body1"
+        "par2"
+        "pic2"
+        "footer"
+    }
+
+    .gallerypage {
+        display: none;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(120px, auto);
+        margin: 0 auto;
+        background-image: url(../Backgrounds/Background.jpeg);
+        max-width: 1200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-areas: 
+        "header"
+        "vid1" 
+        "vid2"
+        "vid3"
+        "vid4"
+        "footer"
+    }
+
+    .recommendations{
+        display: none;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(120px, auto);
+        margin: 0 auto;
+        background-image: url(../Backgrounds/Background.jpeg);
+        max-width: 1200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-areas: 
+        "header"
+        "recheader"
+        "form"
+        "empty1"
+        "footer"
+
+    }
+    
+    .header{
+        grid-area: header;
+        background-image: url(../Backgrounds/headerbackground.jpeg);
+    }
+    
+    .recHeader {
+        margin-left: 5%;
+        grid-area: recheader;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #empty {
+        grid-area: empty;
+    }
+
+    #empty2 {
+        display:none;
+    }
+
+    #empty3 {
+        display: none;
+    }
+
+    h1{
+        font-size: 24pt;
+        margin-left: 20px;
+    }
+    
+    #title { 
+        position: relative;
+        top: 30px;
+        left: 40px;
+    
+    }
+    
+    .buttons {
+        display:flex;
+        flex-basis: 1fr;
+        justify-content: flex-end;
+        margin-right: 5px;
+        margin-top: 90px;
+    
+    
+    }
+    
+    .body1 {
+        grid-area: body1;
+        align-items: center;
+    }
+
+    #bodyheader {
+        display:flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    #bodyparagraph{
+        margin: 0 auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 50px;
+    }
+    
+    .pic1 {
+        grid-area: pic1;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    .pic2 {
+        grid-area: pic2;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .par1 {
+        grid-area: par1;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    
+    .par2{
+        grid-area: par2;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    #resortheader {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .footer{
+        grid-area: footer;
+        background-image: url(../Backgrounds/FooterBackground.jpeg);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #resortList { 
+        display:grid;
+        font-size: 16pt;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(50px, auto);
+        grid-column-gap: 50px;
+        
+
+    }
+
+    #skiform {
+        grid-area: form;
+        display: none;
+        background-color: white;
+        border: 2px black solid;
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    #results {
+        display: none;
+        grid-area: form;
+        background-color: white;
+        border: 2px black solid;
+        margin: 0 auto;
+        width: 85%;
+        align-content: center;
+    }
+
+    #resultsbutton {
+        float: right;
+    }
+
+    #resultTitle {
+        font-size: 20pt;
+        margin: 0 auto
+    }
+
+    #resultSki {
+        font-size: 24pt;
+        margin: 0 auto;
+    }
+
+    #recheader{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .vid1 {
+        grid-area: vid1;
+        margin-top: 75px;
+    }
+
+    .vid2{
+        margin-top: 75px;
+        grid-area: vid2;
+    }
+
+    .vid3{
+        margin-top: 75px;
+        grid-area: vid3;
+    }
+
+    .vid4{
+        margin-top: 75px;
+        margin-bottom: 75px;
+        grid-area: vid4;
+    }
+
+}

@@ -1,0 +1,164 @@
+/* 
+Made background images different (dark theme)
+Made font different color/size/family/weight
+Changed grid layout
+Changed margins
+Changed borders
+Made ski recommendation form and result form different color
+(extra credit) Made toggle button to toggle between different themes
+Changed the background-size for the border to smoothen out the ridges
+Added a text border -webkit-text-stroke to make title and headers stand out more
+Made header background into smaller repeating image
+*/
+
+html {
+    background-image: url(../Backgrounds/ToggleBackground.jpeg);
+    background-size: 200px;
+    color: lightgray;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.title {
+    color:azure;
+    -webkit-text-stroke: 1px black;
+}
+
+.head{
+    -webkit-text-stroke: 1px black;
+
+}
+
+@media screen and (min-width: 768px){
+    html{
+        font-weight: 900;
+        font-size: 26pt;
+    }
+    .homepage{
+        background-image: url(../Backgrounds/ToggleBackground2.jpeg);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "header header header"
+            "pic1 par1 par1"
+            "pic2 par2 par2"
+            "body1 body1 body1"
+            "footer footer footer"
+    }
+
+    .gallerypage{
+        background-image: url(../Backgrounds/ToggleBackground2.jpeg);
+    }
+
+    .recommendations{
+        background-image: url(../Backgrounds/ToggleBackground2.jpeg);
+    }
+    .header {
+        background-image: url(../Backgrounds/ToggleHeaderBackground.jpeg);
+        background-size: 250px;
+    }
+
+    .footer{
+        background-image: url(../Backgrounds/ToggleFooterBackground.jpeg);
+        color: white;
+        align-items: end;
+    }
+
+    .pic1{
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+    .par1 {
+        margin-top: 100px;
+        margin-right: 150px;
+    }
+    .par2 {
+        margin-top: 100px;
+        margin-right: 150px;
+    }
+    .pic2 {
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+
+    .caption {
+        font-size: 12pt;
+    }
+    
+    .body1 {
+        margin-bottom: 50px;
+    }
+
+    #skiform {
+        background-color:rgb(24,24,28);
+        border: white solid 3px;
+    }
+    #results {
+        background-color:rgb(24,24,28);
+        border: white solid 3px;
+    }
+
+    iframe {
+        border: black solid 5px;
+    }
+
+    img{
+        border: black solid 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    html{
+        font-weight: 600;
+    }
+    .homepage {
+        background-image: url(../Backgrounds/ToggleBackground2.jpeg);
+        grid-template-areas: 
+        "header"
+        "par1"
+        "pic1"
+        "pic2"
+        "par2"
+        "body1"
+        "footer"
+        ;
+       
+    }
+
+    .gallerypage{
+        background-image: url(../Backgrounds/ToggleBackground2.jpeg);
+    }
+
+    .recommendations{
+        background-image: url(../Backgrounds/ToggleBackground2.jpeg);
+    }
+    .header {
+        background-image: url(../Backgrounds/ToggleHeaderBackground.jpeg);
+    }
+
+    .pic1 {
+        margin-bottom: 75px;
+    }
+
+    .par2 {
+        margin-bottom: 30px;
+    }
+    #skiform {
+        background-color:rgb(24,24,28);
+        border: white solid 3px;
+    }
+    #results {
+        background-color:rgb(24,24,28);
+        border: white solid 3px;
+    }
+    
+    iframe{
+        border: black solid 2px;
+    }
+
+    .caption {
+        font-size: 10pt;
+    }
+    
+}
