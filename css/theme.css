@@ -9,6 +9,7 @@ Made ski recommendation form and result form different color
 Changed the background-size for the border to smoothen out the ridges
 Added a text border -webkit-text-stroke to make title and headers stand out more
 Made header background into smaller repeating image
+Added css for validation form and thankyou form
 */
 
 @viewport{
@@ -31,6 +32,16 @@ html {
 .head{
     -webkit-text-stroke: 1px black;
 
+}
+
+#myform {
+    background-image: linear-gradient(rgba(64, 66, 132),rgb(68, 68, 71));
+    font-size: 14pt;
+}
+
+#thankyou {
+    background-image: linear-gradient(rgba(64, 66, 132),rgb(68, 68, 71));
+    color: white;
 }
 
 @media screen and (min-width: 768px){
@@ -163,6 +174,10 @@ html {
     }
 
     .caption {
+        font-size: 10pt;
+    }
+
+    .errorMsg {
         font-size: 10pt;
     }
     

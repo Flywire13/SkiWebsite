@@ -8,6 +8,7 @@ Added both main.css and theme.css to css folder
 Added all background images and pictures to Backgrounds folder
 Added a text border -webkit-text-stroke to make title stand out more
 Made title bigger and adjusted positions
+Added css for validation form and thankyou form
 */
 
 @viewport{
@@ -18,6 +19,88 @@ Made title bigger and adjusted positions
 html {
     background-image: url(../Backgrounds/Background2.jpeg);
     font-family: sans-serif;
+}
+
+
+#state-error{
+    color: red
+}
+
+#newspaper-error{
+    color: red;
+}
+
+.was-validated input.was-validated:valid{
+    border: 2px solid green;
+}
+
+.was-validated input:valid, input.was-validated:valid{
+    border: 2px solid green;
+}
+
+.was-validated input:invalid, input.was-validated:invalid{
+    border: 2px solid red;
+}
+
+input.was-validated:invalid ~ div.errorMsg {
+    display: block;
+  }
+  
+input:valid ~ div.errorMsg, input:invalid ~ div.errorMsg {
+    display: none;
+  }
+
+.errorMsg {
+    color: red;
+}
+
+#myform {
+    display: none;
+    margin: 0 auto;
+    width: 90%;
+    top: 50px;
+    left: 5%;
+    right: 5%;
+    position: fixed;
+    background-image: linear-gradient(rgb(135, 127, 114), rgb(233, 232, 230));
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+#myform li {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex: 1;
+}
+#myform button {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#thankyou {
+    color: black;
+    display: none;
+    margin: 0 auto;
+    width: 50%;
+    height: 30%;
+    font-size: 36pt;
+    text-align: center;
+    top: 100px;
+    left: 5%;
+    right: 5%;
+    position: fixed;
+    background-image: linear-gradient(rgb(135, 127, 114), rgb(233, 232, 230));
+    font-weight: bolder;
+    flex-direction: column;
+}
+
+.errorMsg {
+    font-size: 12pt;
 }
 
 
@@ -265,13 +348,15 @@ html {
         font-size: 10pt;
     }
 
+   
+
 
 }
 
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     
     .homepage {
         display: grid;
@@ -508,6 +593,12 @@ html {
         margin-top: 75px;
         margin-bottom: 75px;
         grid-area: vid4;
+    }
+
+    #myform {
+        top: 10px;
+        font-size: 10pt;
+        position: fixed;
     }
 
 }
