@@ -6,6 +6,10 @@ function closethanks(){
     $("#thankyou").hide();
 }
 
+function cancelValidation(){
+    $("#myform").hide();
+}
+
 function homeButton () {
     $(".homepage").show();
     //Array.from(document.getElementsByClassName("homepage")).forEach(i => i.style.display = 'grid');
